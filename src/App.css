@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 1px;
+  border: 0;
+}
+
+.App {
+  background-color: #040129;
+  padding: 1px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #040129;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar{
+  display: grid;
+  background-color: rgb(255, 212, 20);
+  grid-template-columns: 8fr 2fr;
+  align-items: center;
+  justify-items: center;
+  border: 2px solid black;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.searchinput{
+  font-size: 20px;
+  width: -moz-available;
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid orangered;
+}
+
+.searchdivh1{
+  display: block;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 30px auto 10px auto;
+
+}
+.searchbutton{
+  display: grid;
+  grid-template-columns: 140px;
+  margin: 1px auto;
+  border: 2px solid greenyellow;
+  background-color: black;
+  padding: 3px 5px;
+  font-weight: bold;
+  color: chartreuse;
+}
+
+.searchdiv{
+  margin: 90px;
+  display: grid;
+  background-color: lightgray;
+  padding: 50px;
+  border: 2px solid greenyellow
+}
+.icontag{
+  text-align: end;
+  margin-right: 5px;
+}
+.searchform{
+  padding: 10px;
+}
+.searchinfo{
+  font-size: 40px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+.card {
+  border: #ccc 1px dotted;
+  margin: 0.1rem 0.1rem;
+  border: 3px solid orangered;
+  border-radius: 1%;
+  background-color: turquoise;
+  justify-items: center;
+  font-size: 8px;
+  font-weight: lighter;
+}
+.text-center {
+  text-align: center;
+}
+
+.moviecard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  background-color: yellowgreen;
+  margin: 20px;
+  padding: 20px;
+}
+.moviecard > div{
+  display: grid;
+}
+
+
+/* .fragment{
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+} */
+
+.movieinfocontainer{
+  background-color: burlywood;
+  margin: 50px;
+  display: grid;
+  grid-template: repeat(10,1fr) / repeat(6,1fr) ;
+  grid-gap: 10px;
+  grid-template-areas: 
+    'a a a a a a'
+    '. b b b b .'
+    '. b b b b .'
+    '. b b b b .'
+    '. c c d d .'
+    '. e e f f .'
+    '. g g h h .'
+    '. i i j j .'
+    '. . k k . .'
+    'l l l l l l';
+}
+.title{
+  grid-area: a;
+  display: grid;
+  margin: 30px 10px 10px 10px;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+  box-shadow: 8px 8px;
+  background-color: greenyellow;
+  text-shadow: 0 0 3px #6283e6, 0 0 7px #C60F0F;
+}
+
+.actors{
+  grid-area: c;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 7px 7px;
+}
+.release{
+  grid-area: d;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 7px 7px;
+}
+.duration{
+  grid-area: e;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 7px 7px;
+}
+.type{
+  grid-area: f;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 7px 7px;
+}
+.genre{
+  grid-area: g;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 7px 7px;
+}
+.ratingimdb{
+  grid-area: h;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 7px 7px;
+}
+.ratingrt{
+  grid-area: i;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 7px 7px;
+}
+.boxoffice{
+  grid-area: j;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 7px 7px;
+}
+.plot{
+  grid-area: k;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 7px 7px;
+  /* margin: 33px auto 20px auto; */
+}
+.poster{
+  grid-area: b;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+
+}
+.b2search{
+  display: grid;
+  grid-area: l;
+  margin: auto;
+  font-size: 25px;
+  box-shadow: 5px 5px;
+}
+.posterimg{
+  width: 300px;
+  height: 300px;
+  display: grid;
+  border-radius: 1%;
+  border: 13px solid;
+  box-shadow: greenyellow;
+
+}
+
+/* <div className="title">{Title}</div>
+<div className="poster"><img src={Poster} alt="poster"/></div>
+<div className="actors">Actors:{Actors}</div>
+<div className="release">Released:{Released}</div>
+<div className="duration">Duration:{Runtime}</div>
+<div className="type">Type:{Type}</div>
+<div className="genre">Genre:{Genre}</div>
+<div className="ratingimdb">IMDB:{imdbrate}</div>
+<div className="ratingrt">Rotten Tomatoes:{rtrate}</div>
+<div className="boxoffice">Boxoffice:{Boxoffice}</div>
+<div className="plot">Description:{Plot}</div>
+<Link to={'/'} ><div className="b2search"></div></Link> */
+
+
